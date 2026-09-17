@@ -3,14 +3,17 @@
 Addis Eats is a React food ordering interface for Addis Ababa.
 
 ## Run the project
-bash
+
+```bash
 npm install
 npm run dev
+```
 
 For a production build:
 
- bash
+```bash
 npm run build
+```
 
 ## Main features
 
@@ -34,3 +37,4 @@ The cart uses Zustand persistence with the key `addis-eats-cart`, so an order re
 Components use narrow selectors such as `useCartStore((state) => state.items)` or `useCartStore((state) => state.addItem)` instead of reading the complete store.
 
 Auth and interface state stay local to the screens in this version because they do not need the same shared cart behavior.
+
